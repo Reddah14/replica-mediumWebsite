@@ -1,6 +1,7 @@
 .banner {
-  margin-left: 0px;
+  margin-left: 10px;
   margin-right: 5px;
+  margin-bottom: 10px;
   border-radius: 12px;
   display: flex;
   justify-content: flex-end;
@@ -13,13 +14,13 @@
   align-items: center;
   margin-top: 3px;
   margin-left: 0;
-  text-align: justify;
+  text-align: left;
   font-weight: bold;
 }
 
 .follow-btn {
   padding: 2;
-  margin-right: 5px;
+  margin-right: 11px;
   border-radius: 20px;
   width: 75px;
   align-items: center;
@@ -28,10 +29,13 @@
 
 .banner__topic-subtitle {
   color:lightslategray;
+  text-align: left;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding-left: 35px;
 }
 
 .banner__topic-description {
   text-align: left;
+  font-size: 14px;
 }
