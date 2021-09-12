@@ -1,43 +1,72 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.scss";
 import Nav from "./components/Nav/Nav";
 import Banner from "./components/Banner/Banner";
 import NewsArticle from "./components/NewsArticle/NewsArticle";
 
-function App() {
-  /* const news = [
-    {
-      id: "n1",
-      title: "Toilet Paper",
-      amount: 94.12,
-      date: new Date(2020, 7, 14),
-    },
-    { id: "n2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
-    {
-      id: "n3",
-      title: "Car Insurance",
-      amount: 294.67,
-      date: new Date(2021, 2, 28),
-    },
-    {
-      id: "n4",
-      title: "New Desk (Wooden)",
-      amount: 450,
-      date: new Date(2021, 5, 12),
-    },
-  ]; */
 
+const news = [
+  {
+    id: "e1",
+    title: "Toilet Paper Rises price !",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
+    author: "Billie Jean",
+    image: "",
+  },
+  {
+    id: "e2",
+    title: "New TV",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
+    author: "Bruce Willis",
+    image: "",
+  },
+  {
+    id: "e3",
+    title: "Car Insurance",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
+    author: "Madonna Smith",
+    image: "",
+  },
+  {
+    id: "e4",
+    title: "New Desk (Wooden)",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
+    author: "John Doe",
+    image: "",
+  },
+];
+
+function App() {
   return (
     <>
       <Nav />
       <Banner />
-      <NewsArticle />
-      <NewsArticle />
-      <NewsArticle />
-      <NewsArticle />
-      <NewsArticle /> 
+      <NewsArticle
+        title={news[0].title}
+        description={news[0].description}
+        author={news[0].author}
+      />
+      <NewsArticle
+        title={news[1].title}
+        description={news[1].description}
+        author={news[1].author}
+      />
+      <NewsArticle
+        title={news[2].title}
+        description={news[2].description}
+        author={news[2].author}
+      />
+      <NewsArticle
+        title={news[3].title}
+        description={news[3].description}
+        author={news[3].author}
+      />            
     </>
   );
 }
