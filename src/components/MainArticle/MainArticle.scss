@@ -1,5 +1,51 @@
 .main-article {
-  margin: auto;
-  background-color: yellow;
+  margin: 5px 0 5px 0;
   height: 65vh;
+}
+
+.main-article__image {
+  padding: 0;
+  width: 100vw;
+  max-height: 45vh;
+}
+
+.main-article__header {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.main-article__description {
+  color: darkslategrey;
+}
+
+.main-footer {
+  margin-top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: darkslategrey;
+}
+
+.main-footer__profile {
+  margin-left: 15px;
+  margin-top: -8px;
+  margin-bottom: 11px;
+  font-size: 35px;
+}
+
+.main-footer__info {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.main-footer__info--author {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.main-footer__info--time {
+  color: darkslategray;
+  font-size: 12px;
 }
