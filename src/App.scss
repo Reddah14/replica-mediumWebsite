@@ -9,3 +9,12 @@
 html {
   font-family: 'Open Sans', sans-serif;
 }
+
+h6, hr {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 6px 0 12px 18px;
+  font-size: 17px;
+  letter-spacing: 1.2px;
+}

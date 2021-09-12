@@ -5,6 +5,7 @@ import "./App.scss";
 import Nav from "./components/Nav/Nav";
 import Banner from "./components/Banner/Banner";
 import NewsArticle from "./components/NewsArticle/NewsArticle";
+import MainArticle from "./components/MainArticle/MainArticle";
 
 const news = [
   {
@@ -46,6 +47,8 @@ function App() {
     <>
       <Nav />
       <Banner />
+      <MainArticle />
+      <h6>LATEST</h6><hr />
       <NewsArticle
         title={news[0].title}
         description={news[0].description}
