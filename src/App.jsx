@@ -6,7 +6,6 @@ import Nav from "./components/Nav/Nav";
 import Banner from "./components/Banner/Banner";
 import NewsArticle from "./components/NewsArticle/NewsArticle";
 
-
 const news = [
   {
     id: "e1",
@@ -14,7 +13,7 @@ const news = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
     author: "Billie Jean",
-    image: "",
+    imageURL: "http://www.fillmurray.com/200/300",
   },
   {
     id: "e2",
@@ -22,7 +21,7 @@ const news = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
     author: "Bruce Willis",
-    image: "",
+    imageURL: "http://www.fillmurray.com/g/200/300",
   },
   {
     id: "e3",
@@ -30,7 +29,7 @@ const news = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
     author: "Madonna Smith",
-    image: "",
+    imageURL: "https://placebear.com/200/300",
   },
   {
     id: "e4",
@@ -38,7 +37,7 @@ const news = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore pariatur...",
     author: "John Doe",
-    image: "",
+    imageURL: "https://www.stevensegallery.com/g/200/300",
   },
 ];
 
@@ -51,22 +50,26 @@ function App() {
         title={news[0].title}
         description={news[0].description}
         author={news[0].author}
+        imageUrl={news[0].imageURL}
       />
       <NewsArticle
         title={news[1].title}
         description={news[1].description}
         author={news[1].author}
+        imageUrl={news[1].imageURL}
       />
       <NewsArticle
         title={news[2].title}
         description={news[2].description}
         author={news[2].author}
+        imageUrl={news[2].imageURL}
       />
       <NewsArticle
         title={news[3].title}
         description={news[3].description}
         author={news[3].author}
-      />            
+        imageUrl={news[3].imageURL}
+      />
     </>
   );
 }
