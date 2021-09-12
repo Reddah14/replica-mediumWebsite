@@ -3,7 +3,6 @@ import React from "react";
 import "./NewsArticle.scss";
 import { FaBookmark } from "react-icons/fa";
 
-
 const NewsArticle = (props) => {
   return (
     <article className="row news-article">
@@ -11,17 +10,18 @@ const NewsArticle = (props) => {
         <h3 className="news-article__header">{props.title}</h3>
         <p className="news-article__description">{props.description}</p>
       </div>
-      <div className="col-4 news-article__image">
-      </div>
+      <img src={props.imageUrl} className="col-4 news-article__image" alt="murray" />
       <div className="row news-footer">
-          <div
-            className="col-11">{props.author}
-            <div> 12 Sep · 5 min read</div>          
-          </div>
-          <div className="col-1 bookmark-icon"><FaBookmark /></div>
+        <div className="col-11">
+          {props.author}
+          <div> 12 Sep · 5 min read</div>
+        </div>
+        <div className="col-1 bookmark-icon">
+          <FaBookmark />
+        </div>
       </div>
     </article>
-  )
+  );
 };
 
 export default NewsArticle;
