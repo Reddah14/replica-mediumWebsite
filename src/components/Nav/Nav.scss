@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  margin: 0;
+  background-color: #F3F3F3;
+  max-height: 47px;
+  width: 100vw;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__items--logo {
+  display: flex;
+  justify-content: flex-start;
+  height: 47px;
+  width: 55px;
+}
+
+.nav__items--link {
+  color: black;
+}
+
+.nav__functions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
