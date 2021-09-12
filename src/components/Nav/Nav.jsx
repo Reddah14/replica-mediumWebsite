@@ -10,6 +10,7 @@ const Nav = () => {
       <div className="col-5 nav__items">
         <img className="nav__items--logo" alt="ball logo" src={logo} />
         <a
+          className="nav__items--link"
           href="https://www.placecage.com/"
         >
           Open in app
