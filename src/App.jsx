@@ -64,31 +64,52 @@ function App() {
     <>
       <Nav />
       <Banner />
-      <MainArticle />
-      <h6>LATEST</h6><hr />
-      <NewsArticle
+      <MainArticle
         title={news[0].title}
         description={news[0].description}
         author={news[0].author}
         imageUrl={news[0].imageURL}
+        date={news[0].date}
+        readTime={news[0].readTime}
+
       />
+      <h6>LATEST</h6>
+      <hr />
       <NewsArticle
         title={news[1].title}
         description={news[1].description}
         author={news[1].author}
         imageUrl={news[1].imageURL}
+        date={news[1].date}
+        readTime={news[1].readTime}
+
       />
       <NewsArticle
         title={news[2].title}
         description={news[2].description}
         author={news[2].author}
         imageUrl={news[2].imageURL}
+        date={news[2].date}
+        readTime={news[2].readTime}
+
       />
       <NewsArticle
         title={news[3].title}
         description={news[3].description}
         author={news[3].author}
         imageUrl={news[3].imageURL}
+        date={news[3].date}
+        readTime={news[3].readTime}
+
+      />
+      <NewsArticle
+        title={news[4].title}
+        description={news[4].description}
+        author={news[4].author}
+        imageUrl={news[4].imageURL}
+        date={news[4].date}
+        readTime={news[4].readTime}
+
       />
     </>
   );
