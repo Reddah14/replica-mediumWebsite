@@ -10,7 +10,11 @@ const NewsArticle = (props) => {
         <h3 className="news-article__header">{props.title}</h3>
         <p className="news-article__description">{props.description}</p>
       </div>
-      <img src={props.imageUrl} className="col-4 news-article__image" alt="murray" />
+      <img
+        src={props.imageUrl}
+        className="col-4 news-article__image"
+        alt="murray"
+      />
       <div className="row news-footer">
         <div className="col-11">
           {props.author}
